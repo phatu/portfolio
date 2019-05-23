@@ -1,0 +1,214 @@
+/*body */
+
+body {
+  font-family: 'Kalam', cursive;
+  background: rgb(9,76,9);
+  background: linear-gradient(to right, #f6f1d3, #96cf55 85%, #53a748);
+  border-radius: 6px;
+  color: rgb(17, 95, 21);
+
+}
+
+
+/*navigation */
+.nav {
+  height: 100%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 20px;
+  color: rgb(17, 95, 21);
+
+}
+
+/* navigation menu links */
+.nav a {
+  padding: 6px 8px 80px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  width: 150px;
+  height: 80px;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari 3-8 */
+  transform: rotate(20deg);
+  color: rgb(17, 95, 21);
+  font-family: 'Kalam', cursive;
+
+}
+
+/* navigation menu links on hover */
+.nav a:hover {
+  color: #f6f1d3;
+  background-color: #53a748;
+  border-style: solid;
+  border-color: white;
+  font-size: 22px;
+  width: 150px;
+  height: 80px;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+  transform: rotate(270deg);
+}
+
+/* the body */
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+  color: rgb(17, 95, 21);
+  font-family: 'Kalam', cursive;
+
+}
+
+/* On smaller screens, where height is less than 450px */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* typewriter for the navigation links */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(35, end),
+    blink-caret .75s step-end 1;
+}
+
+/* typing effect of the typewriter */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* h1 padding on the index page */
+.main h1 {
+  padding-bottom: 50px;
+}
+
+/* image on the index page */
+.main img{
+  width: 400px;
+  height: 400px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+/* on hover image on the index page */
+.main img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* about page */
+#about {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* about page on mobile */
+@media screen and (max-height: 450px) {
+  #about p{font-size: 18px;}
+}
+
+
+
+/* placing the bars of the skills */
+* {box-sizing:border-box}
+
+.container {
+  width: 100%; 
+  padding: 20px;
+}
+
+
+/* sizing the skills bars */
+.skills {
+  text-align: right; 
+  padding: 10px; 
+  color: #f6f1d3; 
+}
+
+
+/* skills headers */
+#hd {
+  font-size: 22px;
+}
+
+/* skills */
+#skills ul{
+  padding-bottom: 50px;
+}
+
+/* specifying the % of the skills bars on each skill */
+.c {width: 60%; background-color: #53a748;}
+
+.cms {width: 70%; background-color: #53a748;}
+
+.css {width: 75%; background-color: #53a748;}
+
+
+.hci {width: 85%; background-color: #53a748;}
+
+.html {width: 80%; background-color: #53a748;} 
+
+.is { width: 60%; background-color: #53a748;}
+
+.java {width: 50%; background-color: #53a748;}
+
+.js {width: 70%; background-color: #53a748;}
+
+.mean {width: 65%; background-color: #53a748;}
+
+.ms {width: 80%; background-color: #53a748;} 
+
+.mysql {width: 80%; background-color: #53a748;}
+
+.oop {width: 70%; background-color: #53a748;}
+
+.php {width: 80%; background-color: #53a748;}
+
+.python {width: 65%; background-color: #53a748;}
+
+.seo {width: 85%; background-color: #53a748;}
+
+.vb {width: 70%; background-color: #53a748;}
+
+.waf {width: 70%; background-color: #53a748;}
+
+.xhtml {width: 70%; background-color: #53a748;}
+
+/* projects page */
+#projects {
+  padding: 50px;
+}
+
+/* contact page links */
+#contact a{
+  font-size: 18px;
+  color: rgb(17, 95, 21);
+}
+
+/* contacts page spacing of table content */
+#contact td {
+  padding: 10px;
+}
+
+/* buttons on contact page*/
+.btn {
+  width: 210px;
+}
+
+/* footer page */
+#footer {
+  padding-top: 50px;
+}
+
+
+
