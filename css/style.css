@@ -100,11 +100,6 @@ body {
   transition: transform .8s ease-in-out;
 }
 
-/* on hover image on the index page */
-.main img:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
 
 /* about page */
 #about {
