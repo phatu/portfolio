@@ -3,9 +3,9 @@
 body {
   font-family: 'Kalam', cursive;
   background: rgb(9,76,9);
-  background: linear-gradient(to right, #f6f1d3, #96cf55 85%, #53a748);
+  background: linear-gradient(to right, #f6f1d3, #bacdd3 80%, #bebae9);
   border-radius: 6px;
-  color: rgb(17, 95, 21);
+  color: rgb(7, 7, 7);
 
 }
 
@@ -20,7 +20,7 @@ body {
   left: 0;
   overflow-x: hidden; 
   padding-top: 20px;
-  color: rgb(17, 95, 21);
+  color: rgb(7, 7, 7);
 
 }
 
@@ -35,7 +35,7 @@ body {
   -ms-transform: rotate(20deg); /* IE 9 */
   -webkit-transform: rotate(20deg); /* Safari 3-8 */
   transform: rotate(20deg);
-  color: rgb(17, 95, 21);
+  color: rgb(7, 7, 7);
   font-family: 'Kalam', cursive;
 
 }
@@ -43,7 +43,7 @@ body {
 /* navigation menu links on hover */
 .nav a:hover {
   color: #f6f1d3;
-  background-color: #53a748;
+  background-color: #bacdd3;
   border-style: solid;
   border-color: white;
   font-size: 22px;
@@ -58,15 +58,10 @@ body {
 .main {
   margin-left: 160px; 
   padding: 0px 10px;
-  color: rgb(17, 95, 21);
+  color: rgb(7, 7, 7);
   font-family: 'Kalam', cursive;
+  text-align: center;
 
-}
-
-/* On smaller screens, where height is less than 450px */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 /* typewriter for the navigation links */
@@ -93,11 +88,11 @@ body {
 }
 
 /* image on the index page */
-.main img{
+ .mainImage{
   width: 400px;
   height: 400px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
+  border-radius: 30%;
+
 }
 
 
@@ -105,11 +100,6 @@ body {
 #about {
   padding-top: 100px;
   padding-bottom: 50px;
-}
-
-/* about page on mobile */
-@media screen and (max-height: 450px) {
-  #about p{font-size: 18px;}
 }
 
 
@@ -122,67 +112,115 @@ body {
   padding: 20px;
 }
 
-
-/* sizing the skills bars */
-.skills {
-  text-align: right; 
-  padding: 10px; 
-  color: #f6f1d3; 
-}
-
-
 /* skills headers */
-#hd {
+#skillsHeading {
   font-size: 22px;
 }
 
 /* skills */
-#skills ul{
+#skills ul {
   padding-bottom: 50px;
+  list-style-type: none;
 }
 
-/* specifying the % of the skills bars on each skill */
-.c {width: 60%; background-color: #53a748;}
+/* skills images */
+#skills img {
+  width: 200px;
+  height:200px;
+  border-radius: 30%;
+}
 
-.cms {width: 70%; background-color: #53a748;}
+/* skills grid */
+#imageGrid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+}
 
-.css {width: 75%; background-color: #53a748;}
+.angular {
+  grid-area: 1 /2;
 
+}
 
-.hci {width: 85%; background-color: #53a748;}
+.bootstrap {
+  grid-area: 1 /3;
 
-.html {width: 80%; background-color: #53a748;} 
+}
 
-.is { width: 60%; background-color: #53a748;}
+.cshap {
+  grid-area: 1 /4;
+}
 
-.java {width: 50%; background-color: #53a748;}
+.css {
+  grid-area: 2 /2;
+}
 
-.js {width: 70%; background-color: #53a748;}
+.drupal {
+  grid-area: 2 /3;
+}
 
-.mean {width: 65%; background-color: #53a748;}
+.express {
+  grid-area: 2 /4;
+}
 
-.ms {width: 80%; background-color: #53a748;} 
+.html {
+  grid-area: 3 /3;
+}
 
-.mysql {width: 80%; background-color: #53a748;}
+.java {
+  grid-area: 3 /4;
+}
 
-.oop {width: 70%; background-color: #53a748;}
+.javascript {
+  grid-area: 3 /5;
+}
 
-.php {width: 80%; background-color: #53a748;}
+.mongo {
+grid-area: 4 /3;
+}
 
-.python {width: 65%; background-color: #53a748;}
+.node {
+  grid-area: 4 /4;
+}
 
-.seo {width: 85%; background-color: #53a748;}
+.php {
+  grid-area: 4 /5;
+}
 
-.vb {width: 70%; background-color: #53a748;}
+.seo {
+  grid-area: 5 /2;
+}
 
-.waf {width: 70%; background-color: #53a748;}
+.sql {
+  grid-area: 5 /3;
+}
 
-.xhtml {width: 70%; background-color: #53a748;}
+.tdd {
+  grid-area: 5 /4;
+}
+
+.vb {
+  grid-area: 6 /2;
+}
+
+.wordpress {
+  grid-area: 6 /3;
+}
+
+.wpf {
+  grid-area: 6 /4;
+}
 
 /* projects page */
 #projects {
   padding: 50px;
 }
+
+#projects img {
+  width: 700px;
+  height:600px;
+  border-radius: 30%;
+}
+
 
 /* contact page links */
 #contact a{
@@ -203,6 +241,120 @@ body {
 /* footer page */
 #footer {
   padding-top: 50px;
+}
+
+
+
+
+/* on smaller screens, where width is less than 700px */
+@media screen and (max-width: 600px) , screen and (max-height: 700px) {
+
+  /* navigation */
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+/* about  */
+  #about p {
+    font-size: 18px;
+  }
+
+  /* skills images */
+  #skills img {
+    width: 100px;
+    height:100px;
+    border-radius: 30%;
+  }
+
+  /* skills grid */
+  #imageGrid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+  }
+  
+  .angular {
+    grid-area: 1 /1;
+  
+  }
+  
+  .bootstrap {
+    grid-area: 1 /2;
+  
+  }
+  
+  .cshap {
+    grid-area: 2 /1;
+  }
+  
+  .css {
+    grid-area: 2 /2;
+  }
+  
+  .drupal {
+    grid-area: 3 /1;
+  }
+  
+  .express {
+    grid-area: 3 /2;
+  }
+  
+  .html {
+    grid-area: 4 /1;
+  }
+  
+  .java {
+    grid-area: 4 /2;
+  }
+  
+  .javascript {
+    grid-area: 5 /1;
+  }
+  
+  .mongo {
+  grid-area: 5 /2;
+  }
+  
+  .node {
+    grid-area: 6 /1;
+  }
+  
+  .php {
+    grid-area: 6 /2;
+  }
+  
+  .seo {
+    grid-area: 7 /1;
+  }
+  
+  .sql {
+    grid-area: 7 /2;
+  }
+  
+  .tdd {
+    grid-area: 8 /1;
+  }
+  
+  .vb {
+    grid-area: 8 /2;
+  }
+  
+  .wordpress {
+    grid-area: 9 /1;
+  }
+  
+  .wpf {
+    grid-area: 9 /2;
+  }
+
+  #projects img {
+    width: 100px;
+    height:100px;
+    border-radius: 30%;
+  }
 }
 
 
