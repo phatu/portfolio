@@ -3,7 +3,7 @@
 body {
   font-family: 'Kalam', cursive;
   background: rgb(9,76,9);
-  background: linear-gradient(to right, #f6f1d3, #bacdd3 85%, #bebae9);
+  background: linear-gradient(to right, #f6f1d3, #bacdd3 100%, #bebae9);
   border-radius: 6px;
   color: rgb(7, 7, 7);
 
