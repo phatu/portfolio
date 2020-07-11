@@ -95,7 +95,9 @@ body {
 
 }
 
-
+h2 {
+  color: white;
+}
 /* about page */
 #about {
   padding-top: 100px;
@@ -246,7 +248,7 @@ grid-area: 4 /3;
 
 
 
-/* on smaller screens, where width is less than 700px */
+/* on smaller screens, where width is 600px and less and height is 700 and less */
 @media screen and (max-width: 600px) , screen and (max-height: 700px) {
 
   /* navigation */
@@ -355,6 +357,11 @@ grid-area: 4 /3;
     height:100px;
     border-radius: 30%;
   }
+
+  /* buttons on contact page*/
+  .btn {
+  width: 160px;
+}
 }
 
 
