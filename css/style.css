@@ -265,15 +265,15 @@ grid-area: 4 /3;
 
   /* skills images */
   #skills img {
-    width: 100px;
-    height:100px;
+    width: 80px;
+    height:80px;
     border-radius: 30%;
   }
 
   /* skills grid */
   #imageGrid {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 80px 80px;
   }
   
   .angular {
